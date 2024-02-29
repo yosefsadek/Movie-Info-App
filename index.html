@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Info App</title>
+    <link rel="stylesheet" href="/assets//css/main.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="search_area">
+            <input type="text" id="movieName" placeholder="example: Star Wars">
+            <button class="fa-solid fa-search" onclick="getMovie()"></button>
+        </div>
+        <div class="result hidden">
+            <div class="info">
+                <img src="/assets/img/404.jpg" alt="" id="poster">
+                <div class="basics">
+                    <h2 id="title"></h2>
+                    <div class="rating">
+                        <i class="fa-solid fa-star star"></i>
+                        <h4 id="imdbRating">0.0</h4>
+                    </div>
+                    <div class="details">
+                        <span id="rated">Na</span>
+                        <span id="year">Na</span>
+                        <span id="runtime">Na</span>
+                    </div>
+                    <div class="genre"></div>
+                </div>
+            </div>
+            <div>
+                <br>
+                <hr>
+                <br>
+                <h3>Plot:</h3>
+                <p id="plot">Something wrong Oops!!</p>
+                <br>
+                <h3>Cast</h3>
+                <p id="cast">Not me :(</p>
+                <br>
+                <h3>Director</h3>
+                <p id="director"></p>
+                <br>
+                <h3>Writer</h3>
+                <p id="writer"></p>
+            </div>
+        </div>
+        <div class="start_page">
+            <h1>Search any movie..</h1>
+        </div>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+</body>
+</html>
